@@ -1,0 +1,23 @@
+{
+  "name": "fom-website-gaming",
+  "version": "0.1.0",
+  "description": "Website for the 2016 version of the Future of Media course",
+  "main": "index.js",
+  "repository": {
+    "url": "ankhuve/fom-website-gaming",
+    "type": "git"
+  },
+  "author": "Erik Forsberg",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^6.0.0-11",
+    "laravel-elixir-browsersync-official": "^1.0.0",
+    "laravel-elixir-vue": "^0.1.8",
+    "laravel-elixir-webpack-official": "^1.0.8"
+  },
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7",
+    "vue": "^2.0.3"
+  }
+}
