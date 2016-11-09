@@ -6023,4 +6023,28 @@ h4 {
     text-transform: uppercase;
     font-weight: 700; }
 
+section.tease {
+  height: 100vh;
+  width: 100vw;
+  background: #100D06 url("../img/tease-bg.png") center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  section.tease .social {
+    position: absolute;
+    bottom: 3rem;
+    right: 4rem;
+    margin: 0 auto; }
+    section.tease .social a > i {
+      padding: 1rem;
+      color: #3e3319;
+      font-size: 1.8rem;
+      -webkit-transition: color 0.25s;
+      transition: color 0.25s; }
+      section.tease .social a > i:hover {
+        color: #e29139; }
+    section.tease .social h5 {
+      letter-spacing: 0.5rem;
+      color: #3e3319;
+      font-family: "Lato", sans-serif; }
+
 /*# sourceMappingURL=app.css.map */

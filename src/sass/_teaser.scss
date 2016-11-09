@@ -1,0 +1,35 @@
+section.tease{
+    height: 100vh;
+    width: 100vw;
+    background: #100D06 url('../img/tease-bg.png') center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .social{
+        position: absolute;
+        bottom: 3rem;
+        right: 4rem;
+        margin: 0 auto;
+
+        a > i{
+            padding: 1rem;
+            color: #3e3319;
+            font-size: 1.8rem;
+            -webkit-transition: color 0.25s;
+            -moz-transition: color 0.25s;
+            -ms-transition: color 0.25s;
+            -o-transition: color 0.25s;
+            transition: color 0.25s;
+
+            &:hover{
+                color: #e29139;
+            }
+        }
+
+        h5{
+            letter-spacing: 0.5rem;
+            color: #3e3319;
+            font-family: $font-family-sans-serif;
+        }
+    }
+}
