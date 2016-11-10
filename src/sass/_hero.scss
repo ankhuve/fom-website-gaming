@@ -1,67 +1,6 @@
 .hero{
     z-index: 10;
     position: relative;
-    height: 1000px;
+    height: 100vh;
     background: #131602;
-
-    .parallax_layer{
-        height: 1000px;
-        background-size: cover;
-        background: no-repeat bottom center;
-        width: 100%;
-        position: absolute;
-
-        &.parallax{
-            width: 100%;
-            position: fixed;
-        }
-    }
-
-    #layer-0{
-        background-image: url('../img/parallax-00.png');
-    }
-
-    #layer-1{
-        background-image: url('../img/parallax-01.png');
-    }
-
-    #layer-2{
-        background-image: url('../img/parallax-02.png');
-    }
-
-    #layer-3{
-        background-image: url('../img/parallax-03.png');
-    }
-
-    #layer-4{
-        background-image: url('../img/parallax-04.png');
-    }
-
-    #layer-5{
-        background-image: url('../img/parallax-05.png');
-    }
-
-    #layer-6{
-        background-image: url('../img/parallax-06.png');
-    }
-
-    #layer-7{
-        background-image: url('../img/parallax-07.png');
-    }
-
-    #layer-8{
-        background-image: url('../img/parallax-08.png');
-    }
-}
-
-.main-wrapper{
-    height: 1500px;
-    z-index: 100;
-    position: relative;
-    background: $body-bg;
-
-    .main-content{
-        position: relative;
-        z-index: 102;
-    }
 }

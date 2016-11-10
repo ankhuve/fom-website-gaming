@@ -1,4 +1,4 @@
-const Vue = require('vue');
+// const Vue = require('vue');
 
 window.addEventListener("scroll", function(event){
 
@@ -11,6 +11,5 @@ window.addEventListener("scroll", function(event){
         speed = layer.getAttribute('data-speed');
         var yPos = -(top * speed / 100);
         layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
-
     }
 });
