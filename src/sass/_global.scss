@@ -55,10 +55,12 @@ body{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .social{
         position: relative;
         margin: 3rem auto;
         z-index: 120;
+        bottom: auto;
+        right: auto;
     }
 }

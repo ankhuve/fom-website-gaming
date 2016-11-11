@@ -5805,11 +5805,13 @@ body {
     color: #7b4123;
     font-family: "Lato", sans-serif; }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .social {
     position: relative;
     margin: 3rem auto;
-    z-index: 120; } }
+    z-index: 120;
+    bottom: auto;
+    right: auto; } }
 
 h1, h2, h3, h4, h5 {
   font-family: "Coda", cursive;
@@ -6064,8 +6066,12 @@ section.tease {
   .parallax-layer.parallax {
     width: 100%;
     position: fixed; }
-  .parallax-layer#tease {
-    background: #100D06 url("../img/tease-bg.png") center center;
+  .parallax-layer#tease-1 {
+    background: #100D06 url("../img/bg.png") center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .parallax-layer#tease-2 {
+    background: url("../img/link-parallax.png") center center;
     background-repeat: no-repeat;
     background-size: cover; }
   .parallax-layer #layer-0 {

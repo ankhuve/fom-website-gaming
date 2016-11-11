@@ -10,8 +10,13 @@
         position: fixed;
     }
 
-    &#tease{
-        background: #100D06 url('../img/tease-bg.png') center center;
+    &#tease-1{
+        background: #100D06 url('../img/bg.png') center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &#tease-2{
+        background: url('../img/link-parallax.png') center center;
         background-repeat: no-repeat;
         background-size: cover;
     }
