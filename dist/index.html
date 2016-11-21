@@ -18,19 +18,22 @@
     <!-- Styles -->
     <link href="css/app.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
 
-
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
 </head>
 <body>
+<div id="app">
+    <div class="hero" id="parallax">
+        <div class="parallax-layer parallax" id="tease-1" data-speed="35"></div>
+        <div class="parallax-layer parallax" id="tease-2" data-speed="55"></div>
+    </div>
 
-<div class="hero" id="parallax">
-    <div class="parallax-layer parallax" id="tease-1" data-speed="35"></div>
-    <div class="parallax-layer parallax" id="tease-2" data-speed="55"></div>
-</div>
+    <section class="main-wrapper">
+        <div class="container">
+            <div class="main-content">
 
-<section class="main-wrapper">
-    <div class="container">
-        <div class="main-content">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1>Future of Media</h1>
@@ -44,28 +47,54 @@
                         <p>
                             We are going to investigate ideas on topics such as gaming culture, human senses and technologies that will be used in the future. This will then be presented during an event the 16th of December where all project groups will showcase their findings. Representatives from the industry and around 200 students from different years and chapters will be invited.
                         </p>
+                        <div class="social text-center">
+                            <a href="https://www.facebook.com/FoMCompGames" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="https://twitter.com/fomcompgames" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <h5 class="text-uppercase">Follow us</h5>
+                        </div>
                         <div class="divider-fade"></div>
-                        <h5 class="text-center">Questions? <a href="mailto:erik.c.forsberg@gmail.com">Mail us!</a></h5>
-                    </div>
+                        <h3 class="text-center">Questions? <a href="mailto:erik.c.forsberg@gmail.com">Mail us</a></h3>
 
+                    </div>
                 </div>
+
+            </div>
         </div>
 
-        <div class="row">
-            <div class="col-xs-12 col-md-4">
-                <div class="social text-center">
-                    <a href="https://www.facebook.com/FoMCompGames" target="_blank">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                    <a href="https://twitter.com/fomcompgames" target="_blank">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <h5 class="text-uppercase">Follow us</h5>
+        <div class="container m-t-2">
+            <div class="row">
+                <div class="tile-grid">
+                    <div class="project-tile tile-info col-md-4 col-sm-6 col-xs-12">
+                        <div class="content">
+                            <h1>Projects</h1>
+                        </div>
+                    </div>
+
+                    <div v-for="(project, index) in projects" :data-project-id="index" :style="project.styleObject" @click="openModal(index)" class="project-tile col-md-4 col-sm-6 col-xs-12">
+                        <div class="overlay">
+                            <h3>{{ project.name }}</h3>
+                            <ul>
+                                <li v-for="tag in project.tags">
+                                    {{ tag }}
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <div class="container">
+        <modal v-if="showModal" @close="showModal = false" v-bind:content="modal"></modal>
     </div>
-</section>
+
+</div>
 
 <script src="js/app.js"></script>
 

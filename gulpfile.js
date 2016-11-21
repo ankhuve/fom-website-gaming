@@ -9,7 +9,7 @@ elixir(function(mix) {
     mix.sass('app.scss')
         .webpack('app.js')
         .browserSync({
-            files: ['dist/*.html', 'src/sass/*.scss', 'src/js/*.js'],
+            files: ['dist/*.html', 'src/sass/*.scss', 'src/js/*.js', 'src/js/**/*.vue'],
             proxy: undefined,
             server: {
                 baseDir: "dist"
