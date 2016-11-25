@@ -107,10 +107,10 @@ const app = new Vue({
                         1: 'The future of games and ads is personalized and lies within interaction, individual choice and collaboration. Our app idea “ioco” institutes the smart way of effective, target-oriented ad displays through hologram-like, branded 3D projections that will henceforth be instated in various places around the city. When the localization function is activated, the present installments can be tracked via the app proposing the user individual, customer-specific brands to their current needs. In order to collect the points of the brand instalment and gain favored discounts, users have to interact with the 3D images by diverse game options of various effort levels. One time-sensitive way of access, targeting specifically discount hunters, is a simple hand movement, while another option attractive for commuters is playing a short game created by the specific company.',
                     }
                 },
-                imageUrl: '../img/projects/ioco.png',
+                imageUrl: '../img/projects/ioco.jpg',
                 styleObject: {
                     backgroundColor: '#eff0f0',
-                    backgroundImage: "url('../img/projects/ioco.png')"
+                    backgroundImage: "url('../img/projects/ioco.jpg')"
                 }
             },
             5:{
