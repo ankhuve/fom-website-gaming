@@ -109,7 +109,7 @@ const app = new Vue({
                 },
                 imageUrl: '../img/projects/ioco.jpg',
                 styleObject: {
-                    backgroundColor: '#eff0f0',
+                    backgroundColor: '#FFFFFF',
                     backgroundImage: "url('../img/projects/ioco.jpg')"
                 }
             },
@@ -193,10 +193,10 @@ const app = new Vue({
                         1: 'MOSYS plays a bridging role between governmental institutions and video game designers specialized in the development of first-person shooters.  As the characteristics of such video games are integral components of the ongoing dispute if violent video games create aggression, MOSYS pursues a proactive way in resolve this conflict of interests. Through a well thought-out design and integration of moral systems into first-person shooters MOSYS enables both, the teaching of a behavior besides killing opponents and keeping the nature of the first-person shooter as engaging and immersive as before. Instead of reactive approaches, governmental institutions can take a proactive role by funding video game designers when using the solutions of MOSYS.'
                     }
                 },
-                imageUrl: '../img/projects/mosys.jpg',
+                imageUrl: '../img/projects/mosys.png',
                 styleObject: {
                     backgroundColor: '#FFFFFF',
-                    backgroundImage: "url('../img/projects/mosys.jpg')"
+                    backgroundImage: "url('../img/projects/mosys.png')"
                 }
             },
             9:{
