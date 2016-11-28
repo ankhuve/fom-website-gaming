@@ -244,8 +244,9 @@ const app = new Vue({
             11:{
                 name: 'Float',
                 tags: {
-                    1: 'Indie game',
+                    1: 'Indie games',
                     2: 'Financially sustainable development',
+                    3: 'Marketing'
                 },
                 description: {
                     paragraphs: {
