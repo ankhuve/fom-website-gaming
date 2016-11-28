@@ -242,20 +242,20 @@ const app = new Vue({
                 }
             },
             11:{
-                name: 'Tipi',
+                name: 'Float',
                 tags: {
                     1: 'Indie game',
                     2: 'Financially sustainable development',
                 },
                 description: {
                     paragraphs: {
-                        1: 'Tipi Studios is a fictional Indie Game Studio that shows how to be a sustainable Indie Game Studio in the future. The Indie Game Industry is a tough market where it is difficult to stand out from the massive crowd, reach an audience and at the same time keeping the studio afloat. These are just some of the challenges future indie game studios will have to face. By opening the doors to Tipi Studios you will see how this indie game studio of the future deals with critical subjects like marketing, financing, time management and decision making in successful way.'
+                        1: 'Float Studios is a fictional Indie Game Studio that shows how to be a sustainable Indie Game Studio in the future. The Indie Game Industry is a tough market where it is difficult to stand out from the massive crowd, reach an audience and at the same time keeping the studio afloat. These are just some of the challenges future indie game studios will have to face. By opening the doors to Float Studios you will see how this indie game studio of the future deals with critical subjects like marketing, financing, time management and decision making in successful way.'
                     }
                 },
-                imageUrl: '../img/projects/tipi.png',
+                imageUrl: '../img/projects/float.png',
                 styleObject: {
-                    backgroundColor: '#FFFFFF',
-                    backgroundImage: "url('../img/projects/tipi.png')"
+                    backgroundColor: '#353535',
+                    backgroundImage: "url('../img/projects/float.png')"
                 }
             },
         },
