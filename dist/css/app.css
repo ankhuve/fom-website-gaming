@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url(node_modules/flickity/dist/flickity.css);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5774,6 +5775,9 @@ body {
   body a:hover {
     text-decoration: none; }
 
+#app.modalOpen {
+  overflow: hidden; }
+
 .main-wrapper {
   z-index: 100;
   position: relative;
@@ -5823,17 +5827,17 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-family: "Carter One", cursive;
   color: #ffaf0a;
-  font-size: 5rem;
+  font-size: 4.7rem;
   margin: 1rem 0;
   font-weight: 700;
   display: inline-block;
-  line-height: 5rem;
+  line-height: 4.7rem;
   letter-spacing: 0.75rem;
   text-transform: uppercase; }
 
 h2 {
   color: #7b4123;
-  font-size: 4rem;
+  font-size: 3.7rem;
   line-height: 4rem;
   font-weight: 500;
   margin: 1.5rem 0 1.5rem; }
@@ -5854,11 +5858,13 @@ h5 {
   color: #e29139; }
 
 .text-focus {
-  color: #C9DD03;
+  color: #01676a;
   font-weight: 700; }
 
 .text-subheader {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease; }
 
 .divider-fade {
   display: block;
@@ -5875,10 +5881,10 @@ h5 {
   color: #e29139 !important; }
 
 .text-secondary {
-  color: #C9DD03 !important; }
+  color: #01676a !important; }
 
 .underlined {
-  border-bottom: solid #C9DD03 2px; }
+  border-bottom: solid #01676a 2px; }
 
 .required {
   color: #bf5329;
@@ -5963,9 +5969,9 @@ h5 {
     .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
       background: #7b4123; }
   .btn.btn-secondary {
-    background: #C9DD03; }
+    background: #01676a; }
     .btn.btn-secondary:hover, .btn.btn-secondary:active, .btn.btn-secondary:focus {
-      background: #9eaf07; }
+      background: #004c54; }
   .btn.btn-link {
     color: #8eb4cb; }
   .btn.btn-round {
@@ -5985,7 +5991,7 @@ h5 {
     width: 50px; }
 
 .form-control.bordered {
-  border: solid 1px #9eaf07; }
+  border: solid 1px #004c54; }
 
 .form-control::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
@@ -6107,7 +6113,7 @@ section.tease {
     background: #ffffff center center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 240px;
+    height: 205px;
     overflow: hidden;
     cursor: pointer; }
     .tile-grid .project-tile .overlay {
@@ -6126,7 +6132,7 @@ section.tease {
       .tile-grid .project-tile .overlay h3 {
         position: absolute;
         text-align: left;
-        padding-left: 2rem;
+        padding: 0 2rem;
         margin: 0 auto;
         font-family: "Droid Serif", serif;
         letter-spacing: 0.3rem;
@@ -6167,12 +6173,12 @@ section.tease {
       transform: translate3d(-15px, 0, 0); }
     .tile-grid .project-tile:hover ul {
       opacity: 1;
-      -webkit-transform: translate3d(2rem, 0, 0);
-      transform: translate3d(2rem, 0, 0); }
+      -webkit-transform: translate3d(1.5rem, 0, 0);
+      transform: translate3d(1.5rem, 0, 0); }
     .tile-grid .project-tile:hover h3 {
       opacity: 1;
-      -webkit-transform: translate3d(1rem, 2rem, 0) translate3d(1rem, 2rem, 0);
-      transform: translate3d(1rem, 2rem, 0) translate3d(1rem, 2rem, 0); }
+      -webkit-transform: translate3d(1.5rem, 2rem, 0);
+      transform: translate3d(1.5rem, 2rem, 0); }
     .tile-grid .project-tile.tile-info {
       cursor: auto;
       background: none;
@@ -6199,6 +6205,7 @@ section.tease {
   vertical-align: middle; }
 
 .modal-container {
+  max-height: calc(100vh);
   margin: 0 auto;
   padding: 20px 30px 10px;
   background-color: #fff;
@@ -6213,14 +6220,14 @@ section.tease {
     color: #e29139;
     margin: 0;
     line-height: initial;
-    text-transform: uppercase;
-    letter-spacing: 0.7rem; }
+    letter-spacing: 0;
+    font-size: 3rem; }
 
 .modal-body {
   color: #636363;
   border: none;
   margin: 0;
-  max-height: 200px;
+  max-height: 50vh;
   overflow: auto;
   font-size: 1.6rem; }
 
@@ -6228,6 +6235,7 @@ section.tease {
   padding: 2rem 0 0; }
 
 .modal-hero {
+  display: none;
   height: 150px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -6292,11 +6300,58 @@ section.tease {
   transform: scale(1.1); }
 
 @media (min-width: 768px) {
+  .modal-hero {
+    display: block;
+    height: 190px; }
+  .modal-header h2 {
+    letter-spacing: 0.5rem;
+    font-size: 3.7rem; } }
+
+@media (min-width: 992px) {
   .modal-body {
     max-height: inherit; }
   .modal-hero {
-    height: 250px; }
+    height: 247px; }
   .modal-close {
     right: 2rem; } }
+
+@media (min-width: 1200px) {
+  .modal-hero {
+    height: 300px; } }
+
+#event-info {
+  width: 100%;
+  background: #004c54;
+  padding: 5rem 0;
+  margin: 10rem 0 5rem;
+  position: relative;
+  display: block;
+  -webkit-transition: background 0.25s ease;
+  transition: background 0.25s ease; }
+  #event-info .text-subheader {
+    color: #01676a; }
+  #event-info .bullet-point {
+    color: #e29139;
+    text-transform: uppercase;
+    font-size: 2.5rem; }
+  #event-info:before {
+    background: #004c54;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    display: block;
+    content: ' ';
+    width: 100%;
+    height: 100px;
+    -webkit-transform: skewY(-3deg) translateZ(0);
+    transform: skewY(-3deg) translateZ(0);
+    -webkit-transition: background 0.25s ease;
+    transition: background 0.25s ease; }
+  #event-info:hover {
+    background: #01676a; }
+    #event-info:hover:before {
+      background: #01676a; }
+    #event-info:hover .text-subheader {
+      color: #004c54; }
 
 /*# sourceMappingURL=app.css.map */

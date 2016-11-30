@@ -22,9 +22,10 @@
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 <body>
-<div id="app">
+<div id="app" v-bind:class="{ modalOpen: showModal }">
     <div class="hero" id="parallax">
         <div class="parallax-layer parallax" id="layer-6" data-speed="10"></div>
         <div class="parallax-layer parallax" id="layer-5" data-speed="20"></div>
@@ -69,6 +70,50 @@
             </div>
         </div>
 
+        <div id="event-info">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="m-b-2">The event</h1>
+                        <div class="row m-t-2">
+                            <div class="col-md-4 text-center bullet-point">
+                                <h2>
+                                    When?
+                                </h2>
+                                <h1>
+                                    <i class="fa fa-calendar-o"></i>
+                                </h1>
+                                <div class="bullet-point">
+                                    Friday the 17th
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center bullet-point">
+                                <h1>
+                                    <i class="fa fa-map-signs"></i>
+                                </h1>
+                                <div class="bullet-point">
+                                    Q1
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-center bullet-point">
+                                <h1>
+                                    <i class="fa fa-envelope-o"></i>
+                                </h1>
+                                <h1>
+                                    <i class="fa fa-facebook"></i>
+                                </h1>
+                                <div class="bullet-point">
+                                    Sign up to the event
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
         <div class="container m-t-2">
             <div class="row">
                 <div class="tile-grid">
@@ -95,7 +140,7 @@
     </section>
 
     <div class="container">
-        <modal v-if="showModal" @close="showModal = false" v-bind:content="modal"></modal>
+        <modal v-if="showModal" @close="closeModal" v-bind:content="modal"></modal>
     </div>
 
 </div>

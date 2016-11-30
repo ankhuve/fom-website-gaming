@@ -10,7 +10,7 @@
         -webkit-background-size: cover;
         background-size: contain;
         background-repeat: no-repeat;
-        height: 240px;
+        height: 205px;
         overflow: hidden;
         cursor: pointer;
 
@@ -30,7 +30,7 @@
             h3{
                 position: absolute;
                 text-align: left;
-                padding-left: 2rem;
+                padding: 0 2rem;
                 margin: 0 auto;
                 font-family: $font-family-heading;
                 letter-spacing: 0.3rem;
@@ -76,14 +76,14 @@
 
             ul{
                 opacity: 1;
-                -webkit-transform: translate3d(2rem, 0, 0);
-                transform: translate3d(2rem, 0, 0);
+                -webkit-transform: translate3d(1.5rem, 0, 0);
+                transform: translate3d(1.5rem, 0, 0);
             }
 
             h3 {
                 opacity: 1;
-                -webkit-transform: translate3d(1rem, 2rem,0) translate3d(1rem, 2rem,0);
-                transform: translate3d(1rem, 2rem,0) translate3d(1rem, 2rem,0);
+                -webkit-transform: translate3d(1.5rem, 2rem,0);
+                transform: translate3d(1.5rem, 2rem,0);
             }
         }
 

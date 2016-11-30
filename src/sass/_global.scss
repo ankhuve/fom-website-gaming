@@ -9,6 +9,12 @@ body{
     }
 }
 
+#app{
+    &.modalOpen{
+        overflow: hidden;
+    }
+}
+
 .main-wrapper{
     z-index: 100;
     position: relative;

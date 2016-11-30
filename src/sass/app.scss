@@ -7,6 +7,7 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "node_modules/flickity/dist/flickity.css";
 
 // Custom
 @import "global";
@@ -21,3 +22,4 @@
 @import "parallax";
 @import "tiles";
 @import "modal";
+@import "sections";

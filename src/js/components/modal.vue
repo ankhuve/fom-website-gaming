@@ -3,7 +3,7 @@
         <div class="modal-mask">
             <div class="modal-wrapper">
                 <div class="container">
-                    <div class="modal-hero col-xs-12 col-md-6 col-md-offset-3" :style="content.image"></div>
+                    <div class="modal-hero col-xs-12 col-sm-6 col-sm-offset-3" :style="content.image"></div>
                     <div class="modal-container col-xs-12">
                         <div class="modal-close" @click="$emit('close')">
                             <span></span>

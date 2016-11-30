@@ -7,18 +7,18 @@ h1, h2, h3, h4, h5{
 h1{
     font-family: $font-family-big-heading;
     color: $primary-color-bright;
-    font-size: 5rem;
+    font-size: 4.7rem;
     margin: 1rem 0;
     font-weight: 700;
     display: inline-block;
-    line-height: 5rem;
+    line-height: 4.7rem;
     letter-spacing: 0.75rem;
     text-transform: uppercase;
 }
 
 h2{
     color: $primary-color-dark;
-    font-size: 4rem;
+    font-size: 3.7rem;
     line-height: 4rem;
     font-weight: 500;
     margin: 1.5rem 0 1.5rem;
@@ -49,6 +49,11 @@ h5{
 
 .text-subheader{
     margin-top: 1rem;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .divider-fade{

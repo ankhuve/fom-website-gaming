@@ -25,7 +25,7 @@ const app = new Vue({
                 description: {
                     paragraphs: {
                         1:'In the future, we imagine that accurate and efficient digital sensors have helped create '+
-                            'a market for social sensor-based games (Social SBGs). As more people have grown up with computer games,'+
+                        'a market for social sensor-based games (Social SBGs). As more people have grown up with computer games,'+
                         'playing games together is seen more as a natural activity. Team adventure games, in the style of '+
                         'Laserdome or Escape room, are an increasingly more popular activity for after work parties, birthdays'+
                         'and so on. These venues have the resources to provide a wide variety of sensor equipment, enabling '+
@@ -270,9 +270,18 @@ const app = new Vue({
     },
     created: function () {
         window.addEventListener('keyup', this.incrementModalProject);
-        window.addEventListener("scroll", function(event){
-
-            var top = this.pageYOffset;
+        window.addEventListener('scroll', this.parallaxScroll);
+    },
+    methods: {
+        toggleScrolling: function(){
+            if(this.showModal){
+                $('body').css('overflow', 'hidden');
+            } else {
+                $('body').css('overflow', 'auto');
+            }
+        },
+        parallaxScroll: function(){
+            var top = window.pageYOffset;
 
             var layers = document.getElementsByClassName("parallax");
             var layer, speed;
@@ -282,17 +291,22 @@ const app = new Vue({
                 var yPos = -(top * speed / 100);
                 layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
             }
-        });
-    },
-    methods: {
+        },
         setModalContent: function (index) {
             var project = this.projects[index];
 
             this.modal.id = index;
             this.modal.title = project.name;
             this.modal.body = project.description.paragraphs;
-            this.modal.image = project.styleObject;
+            this.modal.image = {
+                backgroundImage : project.styleObject.backgroundImage
+            };
             this.modal.tags = project.tags;
+        },
+
+        closeModal: function(){
+            this.showModal = false;
+            this.toggleScrolling();
         },
 
         openModal: function (index) {
@@ -301,6 +315,8 @@ const app = new Vue({
 
             // Display the modal
             this.showModal = true;
+
+            this.toggleScrolling();
         },
 
         incrementModalProject: function(e){
