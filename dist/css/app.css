@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Coda|Lato");
+@import url("https://fonts.googleapis.com/css?family=Carter+One|Droid+Serif:400,700|Source+Sans+Pro:300,400");
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -1052,11 +1052,11 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
   line-height: 1.6;
   color: #a1a1a1;
-  background-color: #0f0e00; }
+  background-color: #21170b; }
 
 input,
 button,
@@ -1093,7 +1093,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.6;
-  background-color: #0f0e00;
+  background-color: #21170b;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2053,7 +2053,7 @@ th {
   .table > tbody + tbody {
     border-top: 2px solid #ddd; }
   .table .table {
-    background-color: #0f0e00; }
+    background-color: #21170b; }
 
 .table-condensed > thead > tr > th,
 .table-condensed > thead > tr > td,
@@ -3562,7 +3562,7 @@ tbody.collapse.in {
         border-color: #eeeeee #eeeeee #ddd; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
       color: #555555;
-      background-color: #0f0e00;
+      background-color: #21170b;
       border: 1px solid #ddd;
       border-bottom-color: transparent;
       cursor: default; }
@@ -3616,7 +3616,7 @@ tbody.collapse.in {
     .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
     .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
     .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
-      border-bottom-color: #0f0e00; } }
+      border-bottom-color: #21170b; } }
 
 .tab-content > .tab-pane {
   display: none; }
@@ -4295,7 +4295,7 @@ a.badge:hover, a.badge:focus {
   padding: 4px;
   margin-bottom: 22px;
   line-height: 1.6;
-  background-color: #0f0e00;
+  background-color: #21170b;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -5142,7 +5142,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Lato", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5255,7 +5255,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Lato", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -5768,15 +5768,17 @@ button.close {
 
 body {
   color: #e29139;
-  font-family: "Lato", sans-serif; }
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 1.4rem; }
   body a:hover {
     text-decoration: none; }
 
 .main-wrapper {
   z-index: 100;
   position: relative;
-  background: #241210;
-  padding: 4rem 0; }
+  background: #21170b;
+  padding: 8rem 0; }
   .main-wrapper .main-content {
     position: relative;
     z-index: 102; }
@@ -5803,7 +5805,7 @@ body {
   .social h5 {
     letter-spacing: 0.5rem;
     color: #7b4123;
-    font-family: "Lato", sans-serif; }
+    font-family: "Source Sans Pro", sans-serif; }
 
 @media (max-width: 1599px) {
   .social {
@@ -5813,16 +5815,13 @@ body {
     bottom: auto;
     right: auto; } }
 
-@font-face {
-  font-family: 'Fissure';
-  src: url("../fonts/fissure.ttf"); }
-
 h1, h2, h3, h4, h5 {
-  font-family: "Fissure", cursive;
+  font-family: "Droid Serif", serif;
   font-size: 14px;
   line-height: 1.6; }
 
 h1 {
+  font-family: "Carter One", cursive;
   color: #ffaf0a;
   font-size: 5rem;
   margin: 1rem 0;
@@ -5842,11 +5841,12 @@ h2 {
 h3 {
   color: #e29139;
   font-size: 3rem;
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  font-weight: 700; }
 
 h4 {
   font-size: 2.5rem;
-  color: #2f2f2f; }
+  color: #7b4123; }
 
 h5 {
   font-size: 2rem;
@@ -5858,7 +5858,7 @@ h5 {
   font-weight: 700; }
 
 .text-subheader {
-  margin-top: -0.5rem; }
+  margin-top: 1rem; }
 
 .divider-fade {
   display: block;
@@ -6016,7 +6016,7 @@ h5 {
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
   height: 100%;
-  background-color: #0f0e00;
+  background-color: #21170b;
   overflow: hidden; }
 
 /* .expand-enter defines the starting state for entering */
@@ -6047,10 +6047,10 @@ h5 {
   padding: 2rem; }
   .puff .puff-content.puff-content--main {
     font-size: 1.2rem;
-    font-family: "Lato", sans-serif; }
+    font-family: "Source Sans Pro", sans-serif; }
   .puff .puff-content.puff-content--teaser {
     font-size: 2rem;
-    font-family: "Fissure", cursive; }
+    font-family: "Droid Serif", serif; }
 
 .puff .puff-footer {
   padding-bottom: 1rem; }
@@ -6072,7 +6072,9 @@ section.tease {
   position: absolute; }
   .parallax-layer.parallax {
     width: 100%;
-    position: fixed; }
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover; }
   .parallax-layer#tease-1 {
     background: #100D06 url("../img/bg.png") center center;
     background-repeat: no-repeat;
@@ -6081,24 +6083,18 @@ section.tease {
     background: url("../img/link-parallax.png") center center;
     background-repeat: no-repeat;
     background-size: cover; }
-  .parallax-layer #layer-0 {
-    background-image: url("../img/parallax-00.png"); }
-  .parallax-layer #layer-1 {
-    background-image: url("../img/parallax-01.png"); }
-  .parallax-layer #layer-2 {
-    background-image: url("../img/parallax-02.png"); }
-  .parallax-layer #layer-3 {
-    background-image: url("../img/parallax-03.png"); }
-  .parallax-layer #layer-4 {
-    background-image: url("../img/parallax-04.png"); }
-  .parallax-layer #layer-5 {
-    background-image: url("../img/parallax-05.png"); }
-  .parallax-layer #layer-6 {
-    background-image: url("../img/parallax-06.png"); }
-  .parallax-layer #layer-7 {
-    background-image: url("../img/parallax-07.png"); }
-  .parallax-layer #layer-8 {
-    background-image: url("../img/parallax-08.png"); }
+  .parallax-layer#layer-1 {
+    background-image: url("../img/hero-01.png"); }
+  .parallax-layer#layer-2 {
+    background-image: url("../img/hero-02.png"); }
+  .parallax-layer#layer-3 {
+    background-image: url("../img/hero-03.png"); }
+  .parallax-layer#layer-4 {
+    background-image: url("../img/hero-04.png"); }
+  .parallax-layer#layer-5 {
+    background-image: url("../img/hero-05.png"); }
+  .parallax-layer#layer-6 {
+    background-image: url("../img/hero-06.png"); }
 
 .tile-grid {
   width: 100%;
@@ -6130,11 +6126,10 @@ section.tease {
       .tile-grid .project-tile .overlay h3 {
         position: absolute;
         text-align: left;
-        text-transform: uppercase;
         padding-left: 2rem;
         margin: 0 auto;
-        font-family: "Fissure", cursive;
-        letter-spacing: 0.5rem;
+        font-family: "Droid Serif", serif;
+        letter-spacing: 0.3rem;
         font-size: 3rem;
         line-height: 3rem;
         opacity: 0;
@@ -6163,7 +6158,7 @@ section.tease {
           margin: 0;
           list-style: none;
           text-transform: uppercase;
-          font-family: "Lato", sans-serif;
+          font-family: "Source Sans Pro", sans-serif;
           letter-spacing: 0.3rem;
           font-size: 1.3rem; }
     .tile-grid .project-tile:hover .overlay {
@@ -6226,7 +6221,8 @@ section.tease {
   border: none;
   margin: 0;
   max-height: 200px;
-  overflow: auto; }
+  overflow: auto;
+  font-size: 1.6rem; }
 
 .modal-footer {
   padding: 2rem 0 0; }

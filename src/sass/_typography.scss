@@ -1,8 +1,3 @@
-@font-face {
-    font-family: 'Fissure';
-    src: url('../fonts/fissure.ttf');
-}
-
 h1, h2, h3, h4, h5{
     font-family: $font-family-heading;
     font-size: $font-size-base;
@@ -10,6 +5,7 @@ h1, h2, h3, h4, h5{
 }
 
 h1{
+    font-family: $font-family-big-heading;
     color: $primary-color-bright;
     font-size: 5rem;
     margin: 1rem 0;
@@ -32,11 +28,12 @@ h3{
     color: $primary-color;
     font-size: 3rem;
     margin: 1rem 0;
+    font-weight: 700;
 }
 
 h4{
     font-size: 2.5rem;
-    color: $text-color-dark;
+    color: $primary-color-dark;
 }
 
 h5{
@@ -51,7 +48,7 @@ h5{
 }
 
 .text-subheader{
-    margin-top: -0.5rem;
+    margin-top: 1rem;
 }
 
 .divider-fade{
