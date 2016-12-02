@@ -6,6 +6,7 @@
     position: absolute;
     display: table;
     vertical-align: middle;
+    background-size: cover;
 
     .parallax-layer--content{
         text-align: center;
@@ -17,10 +18,7 @@
     }
 
     &.parallax{
-        width: 100%;
         position: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
     }
 
     &#tease-1{
@@ -35,26 +33,54 @@
     }
 
     &#layer-1{
-        background-image: url('../img/hero-01.png');
+        background-image: url('../img/hero_mobile-1.png');
     }
 
     &#layer-2{
-        background-image: url('../img/hero-02.png');
+        background-image: url('../img/hero_mobile-2.png');
     }
 
     &#layer-3{
-        background-image: url('../img/hero-03.png');
+        background-image: url('../img/hero_mobile-3.png');
     }
 
     &#layer-4{
-        background-image: url('../img/hero-04.png');
+        background-image: url('../img/hero_mobile-4.png');
     }
 
     &#layer-5{
-        background-image: url('../img/hero-05.png');
+        background-image: url('../img/hero_mobile-5.png');
     }
 
     &#layer-6{
-        background-image: url('../img/hero-06.png');
+        background-image: url('../img/hero_mobile-6.png');
+    }
+}
+
+@media (min-width: $screen-tablet) {
+    .parallax-layer {
+        &#layer-1 {
+            background-image: url('../img/hero-01.png');
+        }
+
+        &#layer-2 {
+            background-image: url('../img/hero-02.png');
+        }
+
+        &#layer-3 {
+            background-image: url('../img/hero-03.png');
+        }
+
+        &#layer-4 {
+            background-image: url('../img/hero-04.png');
+        }
+
+        &#layer-5 {
+            background-image: url('../img/hero-05.png');
+        }
+
+        &#layer-6 {
+            background-image: url('../img/hero-06.png');
+        }
     }
 }

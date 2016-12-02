@@ -5811,10 +5811,12 @@ body {
     font-family: "Source Sans Pro", sans-serif; }
 
 .author-text {
+  text-transform: uppercase;
   position: absolute;
-  bottom: 0.75rem;
+  bottom: 0.5rem;
   left: 1rem;
-  color: #7b4123; }
+  color: #7b4123;
+  letter-spacing: 0.2rem; }
 
 @media (max-width: 1599px) {
   .social {
@@ -6097,7 +6099,8 @@ section.tease {
   width: 100%;
   position: absolute;
   display: table;
-  vertical-align: middle; }
+  vertical-align: middle;
+  background-size: cover; }
   .parallax-layer .parallax-layer--content {
     text-align: center;
     display: table-cell;
@@ -6106,10 +6109,7 @@ section.tease {
     font-size: 5rem;
     z-index: 10; }
   .parallax-layer.parallax {
-    width: 100%;
-    position: fixed;
-    background-repeat: no-repeat;
-    background-size: cover; }
+    position: fixed; }
   .parallax-layer#tease-1 {
     background: #100D06 url("../img/bg.png") center center;
     background-repeat: no-repeat;
@@ -6118,6 +6118,20 @@ section.tease {
     background: url("../img/link-parallax.png") center center;
     background-repeat: no-repeat;
     background-size: cover; }
+  .parallax-layer#layer-1 {
+    background-image: url("../img/hero_mobile-1.png"); }
+  .parallax-layer#layer-2 {
+    background-image: url("../img/hero_mobile-2.png"); }
+  .parallax-layer#layer-3 {
+    background-image: url("../img/hero_mobile-3.png"); }
+  .parallax-layer#layer-4 {
+    background-image: url("../img/hero_mobile-4.png"); }
+  .parallax-layer#layer-5 {
+    background-image: url("../img/hero_mobile-5.png"); }
+  .parallax-layer#layer-6 {
+    background-image: url("../img/hero_mobile-6.png"); }
+
+@media (min-width: 768px) {
   .parallax-layer#layer-1 {
     background-image: url("../img/hero-01.png"); }
   .parallax-layer#layer-2 {
@@ -6129,7 +6143,7 @@ section.tease {
   .parallax-layer#layer-5 {
     background-image: url("../img/hero-05.png"); }
   .parallax-layer#layer-6 {
-    background-image: url("../img/hero-06.png"); }
+    background-image: url("../img/hero-06.png"); } }
 
 .tile-grid {
   width: 100%;
