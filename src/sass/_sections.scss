@@ -1,36 +1,117 @@
 #event-info{
-    width: 100%;
-    background: $secondary-color-dark;
-    padding: 5rem 0;
-    margin: 10rem 0 5rem;
+    .section-bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: $body-bg url('../img/crowd_cropped_brown.jpg') no-repeat center center;
+        background-size: cover;
+        padding: 5rem 0;
+        margin: 0 0 5rem;
+        display: block;
+        transition: transform 0.25s ease;
+
+        &::before {
+            background: $body-bg;
+            position: absolute;
+            top: -50px;
+            left: 0;
+            display: block;
+            content: ' ';
+            width: 100%;
+            height: 130px;
+            -webkit-transform: skewY(-3deg) translateZ(0);
+            -moz-transform: skewY(-3deg) translateZ(0);
+            -ms-transform: skewY(-3deg) translateZ(0);
+            -o-transform: skewY(-3deg) translateZ(0);
+            transform: skewY(-3deg) translateZ(0);
+            -webkit-transition: background 0.25s ease;
+            -moz-transition: background 0.25s ease;
+            -ms-transition: background 0.25s ease;
+            -o-transition: background 0.25s ease;
+            transition: background 0.25s ease;
+        }
+    }
     position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 5rem 0;
+    margin: 0 0 5rem;
     display: block;
-    -webkit-transition: background 0.25s ease;
-    -moz-transition: background 0.25s ease;
-    -ms-transition: background 0.25s ease;
-    -o-transition: background 0.25s ease;
-    transition: background 0.25s ease;
+
+
+    .event-info__content{
+        .event-links{
+            font-size: 2.7rem;
+
+            i{
+                cursor: pointer;
+                color: $primary-color-bright;
+                transition: color 0.25s;
+                padding: 1rem;
+
+                &:hover{
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
 
     .text-subheader{
         color: $secondary-color;
     }
 
-    .bullet-point{
-        color: $primary-color;
-        text-transform: uppercase;
-        font-size: 2.5rem;
-
+    h2{
+        color: $secondary-color-bright;
     }
 
-    &:before {
-        background: $secondary-color-dark;
+    .bullet-point{
+        color: $primary-color;
+        //text-transform: uppercase;
+        font-size: 2.5rem;
+    }
+
+
+
+    &:hover{
+        .section-bg{
+            transform: scale(1.05);
+
+            &::before{
+                transform: skewY(-3deg) translateZ(0) scale(1);
+            }
+        }
+        background: $secondary-color;
+        
+        .text-subheader{
+            color: $secondary-color-dark;
+        }
+    }
+}
+
+#projects{
+    background: white;
+    width: 100%;
+    display: block;
+    position: relative;
+    padding-bottom: 20rem;
+    top: 5rem;
+
+    h1{
+        margin: 1rem 0 3rem;
+    }
+
+    &::before {
+        background: $body-bg;
         position: absolute;
-        top: -50px;
+        top: -100px;
         left: 0;
         display: block;
         content: ' ';
         width: 100%;
-        height: 100px;
+        height: 230px;
         -webkit-transform: skewY(-3deg) translateZ(0);
         -moz-transform: skewY(-3deg) translateZ(0);
         -ms-transform: skewY(-3deg) translateZ(0);
@@ -43,14 +124,89 @@
         transition: background 0.25s ease;
     }
 
-    &:hover{
-        &:before{
-            background: $secondary-color;
-        }
+    &::after {
+        background: $body-bg;
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        display: block;
+        content: ' ';
+        width: 100%;
+        height: 130px;
+        -webkit-transform: skewY(-3deg) translateZ(0);
+        -moz-transform: skewY(-3deg) translateZ(0);
+        -ms-transform: skewY(-3deg) translateZ(0);
+        -o-transform: skewY(-3deg) translateZ(0);
+        transform: skewY(-3deg) translateZ(0);
+        -webkit-transition: background 0.25s ease;
+        -moz-transition: background 0.25s ease;
+        -ms-transition: background 0.25s ease;
+        -o-transition: background 0.25s ease;
+        transition: background 0.25s ease;
+    }
+}
+
+#general-info{
+    margin-top: 5rem;
+
+    p{
+        font-size: 1.6rem;
+        font-weight: 100;
+        margin-bottom: 2rem;
+    }
+}
+
+#previous-years{
+    width: 100%;
+    margin-top: 10rem;
+    background: $secondary-color;
+    position: relative;
+    display: block;
+    padding-bottom: 8rem;
+
+    .list-inline > li {
+        line-height: 6.5rem;
+    }
+
+    &::before {
         background: $secondary-color;
-        
-        .text-subheader{
-            color: $secondary-color-dark;
-        }
+        position: absolute;
+        top: -50px;
+        left: 0;
+        display: block;
+        content: ' ';
+        width: 100%;
+        height: 150px;
+        -webkit-transform: skewY(3deg) translateZ(0);
+        -moz-transform: skewY(3deg) translateZ(0);
+        -ms-transform: skewY(3deg) translateZ(0);
+        -o-transform: skewY(3deg) translateZ(0);
+        transform: skewY(3deg) translateZ(0);
+        -webkit-transition: background 0.25s ease;
+        -moz-transition: background 0.25s ease;
+        -ms-transition: background 0.25s ease;
+        -o-transition: background 0.25s ease;
+        transition: background 0.25s ease;
+    }
+
+    &::after {
+        background: $secondary-color;
+        position: absolute;
+        bottom: -50px;
+        left: 0;
+        display: block;
+        content: ' ';
+        width: 100%;
+        height: 100px;
+        -webkit-transform: skewY(3deg) translateZ(0);
+        -moz-transform: skewY(3deg) translateZ(0);
+        -ms-transform: skewY(3deg) translateZ(0);
+        -o-transform: skewY(3deg) translateZ(0);
+        transform: skewY(3deg) translateZ(0);
+        -webkit-transition: background 0.25s ease;
+        -moz-transition: background 0.25s ease;
+        -ms-transition: background 0.25s ease;
+        -o-transition: background 0.25s ease;
+        transition: background 0.25s ease;
     }
 }

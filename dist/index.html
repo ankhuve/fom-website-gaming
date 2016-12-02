@@ -20,18 +20,25 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha256-j+P6EZJVrbXgwSR5Mx+eCS6FvP9Wq27MBRC/ogVriY0=" crossorigin="anonymous" />
 
+    <!--<script src="https://unpkg.com/tween.js@16.3.4"></script>-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <!--<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>-->
+
 </head>
 <body>
 <div id="app" v-bind:class="{ modalOpen: showModal }">
     <div class="hero" id="parallax">
-        <div class="parallax-layer parallax" id="layer-6" data-speed="10"></div>
-        <div class="parallax-layer parallax" id="layer-5" data-speed="20"></div>
+        <div class="parallax-layer parallax" data-speed="35">
+            <div class="parallax-layer--content">
+                Future of Media
+            </div>
+        </div>
+        <div class="parallax-layer parallax" id="layer-6" data-speed="20"></div>
+        <div class="parallax-layer parallax" id="layer-5" data-speed="30"></div>
         <div class="parallax-layer parallax" id="layer-4" data-speed="35"></div>
         <div class="parallax-layer parallax" id="layer-3" data-speed="45"></div>
-        <div class="parallax-layer parallax" id="layer-2" data-speed="60"></div>
+        <div class="parallax-layer parallax" id="layer-2" data-speed="65"></div>
         <div class="parallax-layer" id="layer-1"></div>
     </div>
 
@@ -71,40 +78,49 @@
         </div>
 
         <div id="event-info">
+            <div class="section-bg"></div>
             <div class="container">
 
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-8 col-md-offset-2 event-info__content">
                         <h1 class="m-b-2">The event</h1>
                         <div class="row m-t-2">
-                            <div class="col-md-4 text-center bullet-point">
+                            <div class="col-md-4 text-center">
                                 <h2>
                                     When?
                                 </h2>
-                                <h1>
-                                    <i class="fa fa-calendar-o"></i>
-                                </h1>
+
                                 <div class="bullet-point">
-                                    Friday the 17th
+                                    Friday the 16th
+                                    <br>
+                                    13:00
                                 </div>
                             </div>
-                            <div class="col-md-4 text-center bullet-point">
-                                <h1>
-                                    <i class="fa fa-map-signs"></i>
-                                </h1>
+                            <div class="col-md-4 text-center">
+                                <h2>
+                                    Where?
+                                </h2>
+
                                 <div class="bullet-point">
-                                    Q1
+                                    Lecture hall Q1
                                 </div>
                             </div>
-                            <div class="col-md-4 text-center bullet-point">
-                                <h1>
-                                    <i class="fa fa-envelope-o"></i>
-                                </h1>
-                                <h1>
-                                    <i class="fa fa-facebook"></i>
-                                </h1>
+                            <div class="col-md-4 text-center">
+                                <h2>
+                                    How?
+                                </h2>
+
                                 <div class="bullet-point">
-                                    Sign up to the event
+                                    Sign up here!
+                                </div>
+
+                                <div class="event-links">
+                                    <a href="https://future-of-computer-games.confetti.events/" target="_blank">
+                                        <i class="fa fa-envelope-o"></i>
+                                    </a>
+                                    <a href="https://www.facebook.com/events/649679938573624/" target="_blank">
+                                        <i class="fa fa-facebook"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -114,33 +130,103 @@
             </div>
         </div>
 
-        <div class="container m-t-2">
+        <div id="projects">
+            <div class="container m-t-2">
+                <div class="row">
+                    <div class="tile-grid">
+                        <div class="project-tile tile-info col-md-4 col-sm-6 col-xs-12">
+                            <div class="content">
+                                <h1>Projects</h1>
+                            </div>
+                        </div>
+
+                        <div v-for="(project, index) in projects" :data-project-id="index" :style="project.styleObject" @click="openModal(index)" class="project-tile col-md-4 col-sm-6 col-xs-12">
+                            <div class="overlay">
+                                <div class="overlay-bg"></div>
+                                <div class="overlay-content">
+                                    <h3>{{ project.name }}</h3>
+                                    <ul>
+                                        <li v-for="tag in project.tags">
+                                            {{ tag }}
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="general-info">
             <div class="row">
-                <div class="tile-grid">
-                    <div class="project-tile tile-info col-md-4 col-sm-6 col-xs-12">
-                        <div class="content">
-                            <h1>Projects</h1>
+                <div class="col-md-12">
+                    <h1>About</h1>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="text-subheader">Media Technology</h2>
+                            <p>
+                                Information, communication, media, and media technologies have become increasingly important in today’s society and in people’s everyday lives. Media technology can broadly be characterized as tech-nologies and methods for supporting communication between people across distances in time and space.
+                            </p>
+                            <p>
+                                The KTH Royal Institute of Technology has offered a Master of Science in Media Technology since 1999.
+                            </p>
+                            <p><a href="https://www.kth.se/social/program/tmetm/" target="_blank"><button class="btn btn-lg btn-primary">The program</button></a></p>
+                        </div>
+                        <div class="col-md-6">
+                            <h2 class="text-subheader">Future of Media</h2>
+                            <p>
+                                In the project course “Future of Media”, advanced graduate students in Media Technology and Media Management explore the relationship between technology, economy and social factors in processes of technological innovation and development. The course load corresponds to a third of a semester and runs throughout the autumn semester. This year, 2016, the course is given for the fourteenth time, and for the sixth time in English, with international students participating.
+                            <p>
+                                A special effort is being made to document the work, and to make the outcomes of this course available online. The documentation will be included in a book, this website, as well as concrete practical “design representations”, such as movies and prototypes that have been created by different project groups within the course. The outcomes of previous courses are available in
+                                <a href="http://www.futureofmedia.se/archive" target="_blank">the archive</a>.
+                            </p>
+                            <p><a href="https://www.kth.se/social/course/DM2571/" target="_blank"><button class="btn btn-lg btn-primary">The course</button></a></p>
                         </div>
                     </div>
 
-                    <div v-for="(project, index) in projects" :data-project-id="index" :style="project.styleObject" @click="openModal(index)" class="project-tile col-md-4 col-sm-6 col-xs-12">
-                        <div class="overlay">
-                            <h3>{{ project.name }}</h3>
-                            <ul>
-                                <li v-for="tag in project.tags">
-                                    {{ tag }}
-                                </li>
-                            </ul>
+                </div>
+            </div>
+
+        </div>
+        <div id="previous-years">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Previous years</h1>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h4 class="text-invert">During the course's previous years, we have explored the future of..</h4>
+                            </div>
+                            <div class="col-xs-12">
+                                <ul class="list-inline">
+                                    <li><a target="_blank" href="http://www.futureofmedia.se/storytelling"><button class="btn btn-lg btn-invert btn-primary">2015 / Storytelling</button></a></li>
+                                    <li><a target="_blank" href="http://www.futureofmedia.se/digitalcommons"><button class="btn btn-lg btn-invert btn-primary">2014 / Digital Commons</button></a></li>
+                                    <li><a target="_blank" href="http://www.futureofmedia.se/news"><button class="btn btn-lg btn-invert btn-primary">2013 / News</button></a></li>
+                                    <li><a target="_blank" href="http://www.futureofmedia.se/magazines"><button class="btn btn-lg btn-invert btn-primary">2012 / Magazines</button></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button class="btn btn-lg btn-primary">
+                                    Or simply check out the Archive!
+                                </button>
+                            </div>
                         </div>
 
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="author-text">Made with ❤ by <a href="https://www.linkedin.com/in/erik-forsberg-878329b8" target="_blank">Erik Forsberg</a></div>
+
+
     </section>
 
     <div class="container">
-        <modal v-if="showModal" @close="closeModal" v-bind:content="modal"></modal>
+        <modal v-if="showModal" @close="closeModal" v-bind:content="modal" @flip="flipModal"></modal>
     </div>
 
 </div>

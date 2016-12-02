@@ -36,6 +36,13 @@ const app = new Vue({
                         'accurate sensing technologies.'
                     }
                 },
+                contributors: {
+                    1: "Anton Sivertsson",
+                    2: "Emil Westin",
+                    3: "Gabriella Sanchez Karlsson",
+                    4: "Lars Gribbe",
+                    5: "Rasmus Berggrén"
+                },
                 styleObject: {
                     backgroundColor: '#FFFFFF',
                     backgroundImage: "url('../img/projects/senseX.png')"
@@ -65,7 +72,12 @@ const app = new Vue({
                         board games and bring people together even more than before.'
                     }
                 },
-                imageUrl: '../img/projects/uniboard.png',
+                contributors: {
+                    1: "Marcus Ahlström",
+                    2: "Fredrik Berglund",
+                    3: "Michaela Sjöberg",
+                    4: "Arvid Sätterkvist"
+                },
                 styleObject: {
                     backgroundColor: '#FFFFFF',
                     backgroundImage: "url('../img/projects/uniboard.png')"
@@ -87,7 +99,13 @@ const app = new Vue({
                         3: 'Combining this problem with the growing display of gaming culture and fandom, we propose virtual companions. Based on the mixed reality technology, we believe that having your favorite gaming character by your side to express yourself and your passion will be the future of gaming culture.'
                     }
                 },
-                imageUrl: '../img/projects/virtual_companion.png',
+                contributors: {
+                    1: "Corinna Böker",
+                    2: "Tove Johansson",
+                    3: "Isabella Landström",
+                    4: "Denise Lordin",
+                    5: "Yiwen Lu"
+                },
                 styleObject: {
                     backgroundColor: '#FFFFFF',
                     backgroundImage: "url('../img/projects/virtual_companion.png')"
@@ -107,7 +125,13 @@ const app = new Vue({
                         1: 'The future of games and ads is personalized and lies within interaction, individual choice and collaboration. Our app idea “ioco” institutes the smart way of effective, target-oriented ad displays through hologram-like, branded 3D projections that will henceforth be instated in various places around the city. When the localization function is activated, the present installments can be tracked via the app proposing the user individual, customer-specific brands to their current needs. In order to collect the points of the brand instalment and gain favored discounts, users have to interact with the 3D images by diverse game options of various effort levels. One time-sensitive way of access, targeting specifically discount hunters, is a simple hand movement, while another option attractive for commuters is playing a short game created by the specific company.',
                     }
                 },
-                imageUrl: '../img/projects/ioco.jpg',
+                contributors: {
+                    1: "Marion Geissler",
+                    2: "Stina Hübinette",
+                    3: "Elin Lindahl",
+                    4: "Dovile Trepkeviciute",
+                    5: "Elvira Wiklund"
+                },
                 styleObject: {
                     backgroundColor: '#FFFFFF',
                     backgroundImage: "url('../img/projects/ioco.jpg')"
@@ -132,7 +156,13 @@ const app = new Vue({
                         6: 'Kitchen Kombat also encourages interaction within neighborhoods by enabling cooking competitions with your neighbours, or cooking for each other.',
                     }
                 },
-                imageUrl: '../img/projects/kitchen_kombat.png',
+                contributors: {
+                    1: "Hannah Lenczuk",
+                    2: "Jun Li",
+                    3: "Carl Sténson",
+                    4: "Andreas Sylvan",
+                    5: "Wasita Witchutraiphob"
+                },
                 styleObject: {
                     backgroundColor: '#FFFFFF',
                     backgroundImage: "url('../img/projects/kitchen_kombat.png')"
@@ -155,7 +185,13 @@ const app = new Vue({
                         4: 'Get out, be a hero and run the magic run!'
                     }
                 },
-                imageUrl: '../img/projects/magic_run.png',
+                contributors: {
+                    1: "Björn Lundkvist",
+                    2: "Maria Krinaki",
+                    3: "Nino Prekratić",
+                    4: "Marina Cherkasova",
+                    5: "Lisa Schmitz"
+                },
                 styleObject: {
                     backgroundColor: '#FFFFFF',
                     backgroundImage: "url('../img/projects/magic_run.png')"
@@ -174,7 +210,13 @@ const app = new Vue({
                         1: 'Our idea is to give people a new and exciting way to watch broadcasted eSport by using mixed reality. The idea is to, either with the use of technology such as wearable glasses/lenses or with a device put on a table, create a mixed reality version of the game on the table in front of you. Imagine a virtual board game where you do not play but watch the action from above and have the possibility to change the perspective of the view itself. This would allow you to move around the table and look at the game from different angles. We believe that our idea can change not only the way people watch eSport but also increase the spread of eSport as entertainment.',
                     }
                 },
-                imageUrl: '../img/projects/holosport.png',
+                contributors: {
+                    1: "Isabella Richiello",
+                    2: "Niklas Gustavsson",
+                    3: "Jonathan Söderin",
+                    4: "Marcus Frisell",
+                    5: "Shiyao Wang"
+                },
                 styleObject: {
                     backgroundColor: '#FFFFFF',
                     backgroundImage: "url('../img/projects/holosport.png')"
@@ -193,7 +235,13 @@ const app = new Vue({
                         1: 'MOSYS plays a bridging role between governmental institutions and video game designers specialized in the development of first-person shooters.  As the characteristics of such video games are integral components of the ongoing dispute if violent video games create aggression, MOSYS pursues a proactive way in resolve this conflict of interests. Through a well thought-out design and integration of moral systems into first-person shooters MOSYS enables both, the teaching of a behavior besides killing opponents and keeping the nature of the first-person shooter as engaging and immersive as before. Instead of reactive approaches, governmental institutions can take a proactive role by funding video game designers when using the solutions of MOSYS.'
                     }
                 },
-                imageUrl: '../img/projects/mosys.png',
+                contributors: {
+                    1: "Fredrik Eliasson",
+                    2: "Linn Lahtinen",
+                    3: "Leo Preschl",
+                    4: "Jing Yang",
+                    5: "Lubaina Zia"
+                },
                 styleObject: {
                     backgroundColor: '#FFFFFF',
                     backgroundImage: "url('../img/projects/mosys.png')"
@@ -214,7 +262,13 @@ const app = new Vue({
                         2: 'Rather than being directly responsible for a game’s plot, game writers using Omnius instead focus on such broader-scope narrative such as world building and characters. Additionally, they would have to decide which parameters to keep track of in the user’s play style, and how to adapt the game to make it as engaging as possible. With the rules and boundaries set by the designers and writers, Omnious helps players tell a unique and personalized story through their gameplay.'
                     }
                 },
-                imageUrl: '../img/projects/omnius.png',
+                contributors: {
+                    1: "Lisa Torekull",
+                    2: "Maria Hjorth",
+                    3: "Julian Tunru",
+                    4: "Haisheng Yu",
+                    5: "Hongting Pan"
+                },
                 styleObject: {
                     backgroundColor: '#FFFFFF',
                     backgroundImage: "url('../img/projects/omnius.png')"
@@ -235,7 +289,12 @@ const app = new Vue({
                         1: 'In future movement based games the entire body will be involved. Sensors, holograms, VR and similar devices will be affordable and existing in every home and far more developed than they are today. These devices will be portable, more accurate and flexible and you will not be disrupted by uncomfortable glasses and limited by space and place. Advanced technology scans and react on every movement of the body. One example of a future movement based game could be a dance game. Here you can learn how to dance or dance battle with friends, no matter which level you are on. The key to this game is high level of customization, you are free to chose where to dance, what to dance, and how to dance. The goal with future movement based games is to make your game experience immersive and interactive on a complete different level than existing movement based games today.'
                     }
                 },
-                imageUrl: '../img/projects/me_gaming.png',
+                contributors: {
+                    1: "Emelie Dellgren",
+                    2: "Maria Opanasenko",
+                    3: "Wei Wang",
+                    4: "Filip Mori"
+                },
                 styleObject: {
                     backgroundColor: '#FFFFFF',
                     backgroundImage: "url('../img/projects/me_gaming.png')"
@@ -253,7 +312,12 @@ const app = new Vue({
                         1: 'Float Studios is a fictional Indie Game Studio that shows how to be a sustainable Indie Game Studio in the future. The Indie Game Industry is a tough market where it is difficult to stand out from the massive crowd, reach an audience and at the same time keeping the studio afloat. These are just some of the challenges future indie game studios will have to face. By opening the doors to Float Studios you will see how this indie game studio of the future deals with critical subjects like marketing, financing, time management and decision making in successful way.'
                     }
                 },
-                imageUrl: '../img/projects/float.png',
+                contributors: {
+                    1: "Alexis Tubulekas",
+                    2: "Adam Nyberg",
+                    3: "Måns Åberg",
+                    4: "Rebecka Rönnbäck"
+                },
                 styleObject: {
                     backgroundColor: '#353535',
                     backgroundImage: "url('../img/projects/float.png')"
@@ -265,14 +329,34 @@ const app = new Vue({
             title: "",
             body: "",
             image: "",
-            tags: {}
-        }
+            tags: {},
+            contributors: {},
+            showBack: false
+        },
+        numProjects: -1
     },
     created: function () {
         window.addEventListener('keyup', this.incrementModalProject);
         window.addEventListener('scroll', this.parallaxScroll);
+        var size = 0, key;
+        for (key in this.projects) {
+            if (this.projects.hasOwnProperty(key)) size++;
+        }
+        this.numProjects = size;
     },
     methods: {
+        flipModal: function(toSide = null){
+            if(toSide == "front"){
+                this.modal.showBack = false;
+            } else if(toSide == "back"){
+                this.modal.showBack = true
+            } else{
+                this.modal.showBack = !this.modal.showBack;
+            }
+
+            Vue.nextTick(this.setModalHeight);
+
+        },
         toggleScrolling: function(){
             if(this.showModal){
                 $('body').css('overflow', 'hidden');
@@ -302,6 +386,28 @@ const app = new Vue({
                 backgroundImage : project.styleObject.backgroundImage
             };
             this.modal.tags = project.tags;
+            this.modal.contributors = project.contributors;
+
+            this.flipModal("front");
+        },
+
+        setModalHeight: function(){
+            // Set the modal container height
+            var biggestHeight = 0;
+            $(".flip-front, .flip-back").each(function(){
+                // If this elements height is bigger than the biggestHeight
+                if ($(this).height() > biggestHeight ) {
+                    // Set the biggestHeight to this Height
+                    biggestHeight = $(this).height();
+                }
+            });
+
+            if(biggestHeight == 0){
+                $('.modal-container').height("250px");
+            } else{
+                $('.modal-container').height(biggestHeight);
+            }
+
         },
 
         closeModal: function(){
@@ -313,19 +419,23 @@ const app = new Vue({
             // Set the content of the modal to the clicked project
             this.setModalContent(index);
 
+
             // Display the modal
             this.showModal = true;
+
+            // Set the modal container height
+            this.flipModal("front");
 
             this.toggleScrolling();
         },
 
         incrementModalProject: function(e){
-            var currentId = this.modal.id;
-            var newId;
+            var currentId = parseInt(this.modal.id);
+            var newId = 0;
             if (e.keyCode == 39){
                 // right
                 newId = currentId + 1;
-                if(newId > 11){
+                if(newId > this.numProjects){
                     newId = 1;
                 }
                 this.setModalContent(newId);
@@ -333,7 +443,7 @@ const app = new Vue({
                 // left
                 newId = currentId - 1;
                 if(newId < 1){
-                    newId = 11;
+                    newId = this.numProjects;
                 }
                 this.setModalContent(newId);
             }

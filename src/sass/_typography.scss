@@ -4,6 +4,10 @@ h1, h2, h3, h4, h5{
     line-height: $line-height-base;
 }
 
+a{
+    color: $secondary-color;
+}
+
 h1{
     font-family: $font-family-big-heading;
     color: $primary-color-bright;
@@ -17,7 +21,7 @@ h1{
 }
 
 h2{
-    color: $primary-color-dark;
+    color: $secondary-color;
     font-size: 3.7rem;
     line-height: 4rem;
     font-weight: 500;
@@ -37,9 +41,9 @@ h4{
 }
 
 h5{
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: 0.25rem;
-    color: $primary-color;
+    color: $primary-color-dark;
 }
 
 .text-focus{
@@ -69,4 +73,8 @@ h5{
     background: $primary-color;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 200, from($primary-color), to(#241210));
     //border-color: $primary-color;
+}
+
+.text-invert{
+    color: whitesmoke;
 }

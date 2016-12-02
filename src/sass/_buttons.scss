@@ -3,22 +3,35 @@
     font-weight: 500;
     font-size: 1.5rem;
     text-transform: uppercase;
-    border: none;
-    -webkit-transition: background 0.25s;
-    -moz-transition: background 0.25s;
-    -ms-transition: background 0.25s;
-    -o-transition: background 0.25s;
-    transition: background 0.25s;
+    border: 2px solid $primary-color;
+    border-radius: 0;
+    background: none;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -ms-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s;
+
+    &.btn-lg{
+        border-radius: 0;
+        font-size: 1.5rem !important;
+    }
 
     &:hover, &:active, &:focus{
         color: white;
     }
 
     &.btn-primary{
-        background: $primary-color;
+        background: none;
+        border: 2px solid $primary-color;
+
+        &.btn-invert{
+            background: $primary-color;
+        }
 
         &:hover, &:active, &:focus{
-            background: $primary-color-dark;
+            //background: $primary-color-dark;
+            transform: scale(1.03);
         }
     }
 

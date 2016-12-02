@@ -63,6 +63,13 @@ body{
     }
 }
 
+.author-text{
+    position: absolute;
+    bottom: 0.75rem;
+    left: 1rem;
+    color: $primary-color-dark;
+}
+
 @media (max-width: 1599px) {
     .social{
         position: relative;
