@@ -148,12 +148,9 @@ const app = new Vue({
                 },
                 description: {
                     paragraphs: {
-                        1: 'Kitchen Kombat is a gamification concept taking place in the kitchen. It aims at encouraging users to have fun while learning how to become better at cooking. It does so by introducing game elements such as:',
-                        2: 'Different game modes including task completion and multiplayer competition, AR and audio instructions, instant feedback, experience points for unlocking new features and ranking.',
-                        3: 'A kitchen is used as the game arena and can be shared between family members or friends. The users in a game arena can compete with each other doing a specific kitchen task such as a cooking skill etc.',
-                        4: 'By comparing experience points, the game can indicate who’s taking the most responsibility in a certain game arena, for example the dishes, and encourage those who are behind to help out.',
-                        5: 'The game also motivates social interaction between users in the same game arena or users in the same neighborhood.',
-                        6: 'Kitchen Kombat also encourages interaction within neighborhoods by enabling cooking competitions with your neighbours, or cooking for each other.',
+                        1: 'Kitchen Kombat is a gamification concept taking place in the kitchen. It aims at encouraging users to have fun while learning how to become better at cooking. It does so by introducing game elements such as: Different game modes including task completion and multiplayer competition, AR and audio instructions, instant feedback, experience points for unlocking new features and ranking.',
+                        2: 'A kitchen is used as the game arena and can be shared between family members or friends. The users in a game arena can compete with each other doing a specific kitchen task such as a cooking skill etc. By comparing experience points, the game can indicate who’s taking the most responsibility in a certain game arena, for example the dishes, and encourage those who are behind to help out.',
+                        3: 'The game also motivates social interaction between users in the same game arena or users in the same neighborhood. Kitchen Kombat also encourages interaction within neighborhoods by enabling cooking competitions with your neighbours, or cooking for each other.'
                     }
                 },
                 contributors: {
