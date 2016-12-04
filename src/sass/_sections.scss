@@ -84,7 +84,7 @@
             }
         }
         background: $secondary-color;
-        
+
         .text-subheader{
             color: $secondary-color-dark;
         }
@@ -166,6 +166,7 @@
 
     .list-inline > li {
         line-height: 6.5rem;
+        width: 100%;
     }
 
     &::before {
@@ -208,5 +209,13 @@
         -ms-transition: background 0.25s ease;
         -o-transition: background 0.25s ease;
         transition: background 0.25s ease;
+    }
+}
+
+@media (min-width: $screen-tablet) {
+    #previous-years{
+        .list-inline > li {
+            width: auto;
+        }
     }
 }

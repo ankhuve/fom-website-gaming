@@ -6,6 +6,7 @@
     border: 2px solid $primary-color;
     border-radius: 0;
     background: none;
+    width: 100%;
     -webkit-transition: all 0.15s;
     -moz-transition: all 0.15s;
     -ms-transition: all 0.15s;
@@ -72,5 +73,11 @@
             height: 50px;
             width: 50px;
         }
+    }
+}
+
+@media (min-width: $screen-tablet){
+    .btn{
+        width: auto;
     }
 }
